@@ -5,11 +5,11 @@ bool dump(int process_id, std::uintptr_t offset, std::uint64_t size, bool print)
 
 int main(int argc, char** argv)
 {
-	  int process_id = std::atoi(argv[1]);
+    int process_id = std::atoi(argv[1]);
 
     std::uint64_t size;
     std::uintptr_t offset;
-	  std::stringstream stream;
+    std::stringstream stream;
 
     stream << argv[2];
     stream >> std::hex >> offset;
